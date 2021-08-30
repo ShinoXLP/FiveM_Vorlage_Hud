@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<body>
+		<script src="script.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by ShinoX</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#hud {
+		position: absolute;
+		width: 188px;
+		height: 60px;
+		left: 1701px;
+		top: 47px;
+		overflow: visible;
+	}
+	#Ellipse_3 {
+		fill: rgba(21,21,21,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 0.8333333134651184px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_3 {
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 45px;
+		top: 12px;
+		overflow: visible;
+	}
+	#vorlage_11 {
+		fill: rgb(21, 21, 21);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 0.8333333134651184px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.vorlage_11 {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 20px;
+		left: 78px;
+		top: 6px;
+	}
+	#name {
+		fill: rgb(21, 21, 21);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 0.8333333134651184px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.name {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#money {
+		fill: #8600ff;
+	}
+	.money {
+		position: absolute;
+		overflow: visible;
+		width: 110px;
+		height: 20px;
+		left: 1px;
+		top: 15px;
+	}
+	#vorlage_12 {
+		fill: rgba(21, 21, 21, 0.774);
+		stroke: #8600ff;
+		stroke-width: 0.8333333134651184px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.vorlage_12 {
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		height: 100px;
+		left: 100px;
+		top: 10px;
+	}
+	#content2 {
+		left: 107.238px;
+		top: 11px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgba(255,255,255,1);
+	}
+	#content {
+		left: 107.238px;
+		top: 11px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgba(255,255,255,1);
+	}
+	.voice1 {
+		position: absolute;
+		width: 26px;
+		height: 5px;
+		left: 111px;
+		top: 39px;
+		overflow: visible;
+	}
+		.voice2 {
+		position: absolute;
+		width: 26px;
+		height: 5px;
+		left: 111px;
+		top: 39px;
+		overflow: visible;
+	}
+		.voice3 {
+		position: absolute;
+		width: 26px;
+		height: 5px;
+		left: 111px;
+		top: 39px;
+		overflow: visible;
+	}
+		.voice4 {
+		position: absolute;
+		width: 26px;
+		height: 5px;
+		left: 111px;
+		top: 39px;
+		overflow: visible;
+	}
+	#Ellipse_2 {
+		fill: #8600ff;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 5px;
+		height: 5px;
+		left: 0px;
+		top: 7px;
+	}
+	#Ellipse_2_n {
+		fill: #8600ff;
+	}
+	.Ellipse_2_n {
+		position: absolute;
+		overflow: visible;
+		width: 5px;
+		height: 5px;
+		left: 10px;
+		top: 7px;
+	}
+	#Ellipse_2_o {
+		fill: #8600ff;
+	}
+	.Ellipse_2_o {
+		position: absolute;
+		overflow: visible;
+		width: 5px;
+		height: 5px;
+		left: 21px;
+		top: 7px;
+	}
+	#Gruppe_10 {
+		position: absolute;
+		width: 37px;
+		height: 13px;
+		left: 151px;
+		top: 35px;
+		overflow: visible;
+	}
+	.funk {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		left: 23px;
+		top: 7px;
+		overflow: visible;
+	}
+	.funke {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		left: 23px;
+		top: 7px;
+		overflow: visible;
+	}
+	#microphone-solid_1 {
+		position: absolute;
+		width: 10px;
+		height: 13px;
+		left: 0px;
+		top: 7px;
+		overflow: visible;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div id="hud">
+		<svg class="vorlage_12">
+			<rect id="vorlage_12" rx="15" ry="15" x="-70" y="-10" width="200" height="70">
+			</rect>
+		</svg>
+		<img id="Logo" src="https://cdn.discordapp.com/attachments/855433027572596768/855956423295631430/Rich.png">
+		<div class="money">
+			<div id="content">0$</div>
+		</div>
+		<div class="name">
+			<div id="content">ServerName</div>
+		</div>
+		<div class="voice1" id ="shadow">
+			<svg class="Ellipse_2">
+				<ellipse id="Ellipse_2" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+		</div>
+
+		<div class="voice2" id="voicee">
+			<svg class="Ellipse_2">
+				<ellipse id="Ellipse_2" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+			<svg class="Ellipse_2_n">
+				<ellipse id="Ellipse_2_n" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+		</div>
+
+		<div class="voice3" id="voicee">
+			<svg class="Ellipse_2">
+				<ellipse id="Ellipse_2" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+			<svg class="Ellipse_2_n">
+				<ellipse id="Ellipse_2_n" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+			<svg class="Ellipse_2_o">
+				<ellipse id="Ellipse_2_o" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+				</ellipse>
+			</svg>
+		</div>
+
+
+
+		<div id="Gruppe_10">
+			<img class="funk" src="https://cdn.discordapp.com/attachments/855433027572596768/861341496589418536/broadcast-tower-solid_1.png" id="funk">
+			<img class="funke" src="https://cdn.discordapp.com/attachments/788240573382787114/848384219758854185/broadcast-tower-solid_1.png" id="funke">
+				
+			<img id="microphone-solid_1" src="https://cdn.discordapp.com/attachments/855433027572596768/861341502135336980/microphone-alt-solid.png">
+				
+		</div>
+	</div>
+</div>
+</body>
+</html>
